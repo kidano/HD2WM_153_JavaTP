@@ -1,0 +1,23 @@
+html, blody {
+  height: 100%;
+}
+
+.eni-landing-page-background {
+  background-image: url("rows-red-seats-theater.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.eni-icon-header-page {
+  width: 120px;
+}
+
+.eni-landing-title {
+  color: white;
+}
+
+.eni-star-check {
+  color: orange;
+}

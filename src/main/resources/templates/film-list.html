@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="vendor/uikit/css/uikit.min.css"/>
+  <!-- UiKit JS -->
+  <script src="vendor/uikit/js/uikit.min.js"></script>
+  <script src="vendor/uikit/js/uikit-icons.min.js"></script>
+  <!--    Fontawesome CSS-->
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css"/>
+  <!-- my theme -->
+  <link rel="stylesheet" href="eni-theme.css"/>
+
+</head>
+<body>
+<div class="uk-container">
+  <h1>Liste des films</h1>
+  <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+    <div>
+      <div th:each="movie : ${movies}">
+        <div class="uk-padding-small">
+          <div class="uk-card uk-card-secondary uk-card-body">
+            <h3 th:text="${movie.title}"></h3>
+            <img src="oppenheimer.jpg">
+            <div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div>
+              <i class="far fa-star eni-star-check"></i>
+              <i class="far fa-star eni-star-check"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
